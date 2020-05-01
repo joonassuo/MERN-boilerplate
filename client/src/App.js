@@ -1,12 +1,13 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Frontpage from "./components/Frontpage/Frontpage";
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<Frontpage />
-		</div>
+		<Router>
+			<Route path="/" exact component={Frontpage} />
+		</Router>
 	);
-}
+};
 
 export default App;

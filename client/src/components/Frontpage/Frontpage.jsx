@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
+import "./frontpage.css";
 
 const Frontpage = () => {
-	const [state, setState] = useState("initialstate");
 	return (
 		<div>
 			<h2>Lorem Ipsum</h2>
